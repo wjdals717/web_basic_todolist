@@ -1,0 +1,59 @@
+.header {
+    border-bottom: 1px solid #dbdbdb; /*shadow도 가능*/
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(246, 248, 250);
+    z-index: 1;
+}
+
+.header-menu {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.header-title{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-title:hover {
+    color:rgb(173, 208, 255);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.sidebar-button {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header-search {
+    margin-right: 30px;
+}
+
+.header-search > input {
+    width: 250px;
+}
+
+
+
+
+
+

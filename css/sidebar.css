@@ -1,0 +1,62 @@
+.sidebar {
+    visibility: hidden;
+    position: absolute;
+    transition: left 0.3s ease;   /*[변화를 줄 속성] [시간] [일정한 속도로 천천히] */
+    top: 0px;
+    left: -200px;
+    border-right: 1px solid #dbdbdb;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+.isSidebarOpen{
+    visibility: visible;
+    left: 0px;
+    /* transition: left 1s ease; */
+}
+
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #dbdbdb;
+    padding: 10px;
+    height: 70px;
+    background-image: linear-gradient(to bottom right, #fafafa, white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar-logo > i {
+    margin-right: 15px;
+}
+
+.sidebar-menu-list{
+    border-top: 1px solid #dbdbdb;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu-items:hover {
+    background-color: #eee;
+}
+
+.menu-items:active {
+    background-color: #dbdbdb;
+}
+
+.isMenuSelected {
+    background-color: #fafafa;
+}

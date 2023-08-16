@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.btn {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #eee;
+}
+
+.main-container {
+    display: flex;
+    border: 1px solid #dbdbdb; /*shadow도 가능*/
+    height: 100%;
+    background-color: rgb(246, 248, 250);
+}
+
+.invisible{
+    display: none !important;
+}
+
+.w-f{
+    width: 100%;
+}

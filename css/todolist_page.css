@@ -1,0 +1,235 @@
+.first-page-container {
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+}
+
+.view-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 20px;
+    padding: 50px;
+    border-radius: 100px;
+    background-color: #adadad;
+    width: 100%;
+    height: 650px;
+}
+
+.view-container > i{
+    font-size: 550px;
+}
+
+.cal-container{
+    position: absolute;
+    /* display: flex; */
+    top: 145px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 75%;
+    height: 430px;
+    /* background-color: #dfffa3; */
+}
+
+.cal-nav{
+    display: flex;
+    /* position: fixed; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    /* width: 100%; */
+}
+
+.cal-nav > span{
+    margin: 0px 10px;
+    padding: 6px;
+}
+
+.cal-nav > button {
+    margin: 0px 10px;
+    border-radius: 40px;
+}
+
+.cal{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #fff;
+    width: 100%;
+    height: 360px;
+}
+
+/* 페이퍼 클립 속성*/
+.view-items{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    font-size: 70px;
+}
+
+/* todolist */
+.todolist-container{
+    display: flex;
+    margin: 0px 10px;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* border-radius: 100px; */
+    /* background-color: #e9e5c0; */
+    width: 100%;
+    height: 100%;
+}
+
+.todolist-nav {
+    margin-bottom: 0px;
+    border-radius: 40px;
+}
+
+
+.todolist-div{
+    /* border-radius: 40px; */
+    width: 100%;
+    height: 450px;
+    /* overflow-y: scroll; */
+}
+
+.todolist-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* .todolist-filter > span {
+
+} */
+
+#todolist-view {    /*select name*/
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.todolist-main-container {
+    /* margin-right: 3px; 스크롤과의 간격 띄우기 */
+    padding-right: 5px; /* 스크롤과의 간격 띄우기 */
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.todolist-main-container::-webkit-scrollbar { /* 스크롤바의 크기 지정, 이전까진 스크롤 나오지 않음 */
+    width: 3px;
+}
+
+.todolist-main-container::-webkit-scrollbar-thumb { /* 스크롤바가 생성됐을 때 스크롤 나오도록 지정 */
+    background-color: #dbdbdb;
+    border-radius: 3px;
+}
+
+.todolist-main-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.complet-chkboxes {
+    display: none;
+}
+
+.complet-chkboxes + label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.complet-chkboxes:checked + label::after {
+    content: "✔️";
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
+    /* background-color: #ffbb00; */
+}
+
+.todolist-content{
+    color: black;
+}
+
+.todolist-content-color{
+    color:#adadad;
+}
+
+/* .todolist-left,
+.todolist-center {
+    display: flex;
+    align-items: center;
+} */
+
+.todolist-center{
+    flex-grow: 1;       /* 채우기 */
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.todolist-right {
+    display: flex;
+    /* flex-direction: column; 밑으로 정렬 */
+    align-items: center;   
+}
+
+.todolist-insert-container {
+    display: flex;
+    align-items: end;
+    /* justify-content: end; */
+    /* margin-bottom: 5px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 5px ;
+    padding-right: 5px;
+    font-size: 16px;
+    /* background-color: #fff; */
+    width: 100%;
+    height: 50px;;
+}
+
+.todolist-insert-items{
+    width: 100%;
+    height: 100%;
+}
+
+.text-input {
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+    /* border-radius: 4px; */
+    /* padding: 5px 20px; */
+    width: 100%;
+    height: 100%;
+}
+
+.text-input:focus::placeholder {
+    color: black;
+}
